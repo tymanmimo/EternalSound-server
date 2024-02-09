@@ -9,6 +9,9 @@ const routes = require('express').Router();
 const bcrypt = require('bcrypt');
 const mongoose = require('mongoose');
 
+routes.post('/hello', (res: any, req: any) => {
+    res.send("Hello Boy!");
+})
 
 routes.post('/register', async (req: any, res: any) => {
     try {
